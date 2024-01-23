@@ -1,0 +1,68 @@
+@font-face{
+    font-family: 'Bobatime';
+    src: url(Bobatime-Regular.ttf);
+}
+
+.clock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 320px; 
+    height: 320px;
+}
+
+.hour-hand,
+.min-hand,
+.second-hand {
+    position: absolute;
+    background: black; /* Set the color of the hands */
+    transform-origin: 50% 100%; /* Set the rotation point at the bottom center */
+    transform: rotate(90deg);
+}
+
+.hour-hand {
+    height: 8px; /* Adjust the width of the hour hand */
+    width: 90px; /* Adjust the height of the hour hand */
+    top: 50%;
+    left: 50%;
+    transform-origin: 100%;
+    margin-top: -4px; /* Half of the height to center the hand */
+    margin-left: -90px; /* Half of the width to center the hand */
+    transition: all 0.5s;
+    background: rgb(128, 128, 128);
+}
+
+.min-hand {
+    height: 4px; /* Adjust the width of the hour hand */
+    width: 100px; /* Adjust the height of the hour hand */
+    top: 50%;
+    left: 50%;
+    transform-origin: 100%;
+    margin-top: -2px; /* Half of the height to center the hand */
+    margin-left: -100px; /* Half of the width to center the hand */
+    background: rgb(128, 128, 128);
+}
+
+.second-hand {
+    height: 2px; /* Adjust the width of the hour hand */
+    width: 115px; /* Adjust the height of the hour hand */
+    top: 50%;
+    left: 50%;
+    transform-origin: 100%;
+    margin-top: -1px; /* Half of the height to center the hand */
+    margin-left: -115px; /* Half of the width to center the hand */
+    background: rgb(214, 154, 32);
+    transition: all 0.5s;
+}
+
+.time{
+    font-family: "Bobatime";
+    font-size: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+}
